@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="image1.jpg">
+
+  <title>Luluu - Makeup Artist</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="announcement">
+    Now booking 2026 weddings - limited dates
+  </div>
+
+
+  <header class="header">
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="logo">Luluu</div>
+
+    <!-- Empty box keeps the logo centered -->
+    <div class="header-spacer"></div>
+  </header>
+
+  <!-- Dropdown menu -->
+  <nav class="menu" id="menu">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
+  </nav>
+
+<section class="hero">
+  <video autoplay muted loop playsinline poster="images/hero-poster.jpg">
+    <source src="herovid.mp4" type="video/mp4">
+  </video>
+</section>
+  <!-- Dark intro block -->
+  <section class="intro">
+    <h1>Skin first.<br>Makeup second.</h1>
+    <p>
+      Soft, radiant looks for brides, shoots and everyday.
+      Made to feel like you, only better.
+    </p>
+    <a href="#book" class="button">Book a session</a>
+  </section>
+
+  <!-- Portfolio carousel -->
+  <section class="work" id="work">
+    <h2>Meet the faces</h2>
+
+    <div class="slides" id="slides">
+
+      <div class="slide">
+        <img src="bridal.jpg" alt="Bridal makeup look">
+        <p>Bridal glow, natural finish.</p>
+        <a href="#book" class="text-link">Book this look</a>
+      </div>
+
+      <div class="slide">
+        <img src="image5.jpg" alt="Soft glam makeup look">
+        <p>Editorial soft glam.</p>
+        <a href="#book" class="text-link">Book this look</a>
+      </div>
+
+      <div class="slide">
+        <img src="image4.jpg" alt="Everyday makeup look">
+        <p>Everyday skin tint.</p>
+        <a href="#book" class="text-link">Book this look</a>
+      </div>
+
+    </div>
+
+    <div class="arrows">
+      <button id="prevButton" aria-label="Previous">&#8249;</button>
+      <button id="nextButton" aria-label="Next">&#8250;</button>
+    </div>
+  </section>
+
+  
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <p class="services-intro">
+      Every booking starts with a skin prep and a quick chat about the look you want.
+    </p>
+
+    <div class="service-list">
+
+      <article class="service">
+        <img src="image1.jpg" alt="Bridal makeup">
+        <h3>Bridal</h3>
+        <p>Trial plus wedding day makeup, built to last from the first photo to the last dance.</p>
+        <a href="#book" class="text-link">Book bridal</a>
+      </article>
+
+      <article class="service">
+        <img src="image2.jpg" alt="Soft glam makeup">
+        <h3>Soft glam</h3>
+        <p>A polished, radiant look for events, birthdays and nights out.</p>
+        <a href="#book" class="text-link">Book soft glam</a>
+      </article>
+
+      <article class="service">
+        <img src="image3.jpg" alt="Makeup lesson">
+        <h3>Full Glam Makeup</h3>
+        <p>One-on-one lessons where you learn to recreate your look at home.</p>
+        <a href="#book" class="text-link">Book full glam</a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <section class="book" id="book">
+    <h2>Let's make<br>something soft.</h2>
+    <a href="mailto:hello@example.com" class="button">Get in touch</a>
+  </section>
+
+
+<footer class="footer">
+  <div class="footer-logo">Luluu</div>
+
+  <div class="footer-links">
+    <a href="https://www.tiktok.com/@luluunemavhadwe" target="_blank" rel="noopener">
+      TikTok: @luluunemavhadwe
+    </a>
+    <a href="https://wa.me/27821234567" target="_blank" rel="noopener">
+      WhatsApp: 071 632 1169
+    </a>
+  </div>
+
+  <p class="footer-copy">&copy; 2026 Luluu. All rights reserved.</p>
+</footer>
+
+  <a href="#book" class="floating-button">Book</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

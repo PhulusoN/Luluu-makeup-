@@ -1,0 +1,350 @@
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+
+/* ---------- Announcement bar ---------- */
+.announcement {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 14px 20px;
+}
+
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #111111;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.header-spacer {
+  width: 26px;
+}
+
+/* Hamburger icon (three lines) */
+.menu-button {
+  width: 26px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-button span {
+  display: block;
+  height: 2px;
+  background-color: #111111;
+}
+
+/* Dropdown menu (hidden until button is clicked) */
+.menu {
+  display: none;
+  padding: 10px 20px 20px;
+  border-bottom: 1px solid #111111;
+}
+
+.menu.open {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* ---------- Hero ---------- */
+.hero {
+  height: 450px;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crops the video to fill the box */
+  display: block;
+}
+
+
+/* ---------- Dark intro block ---------- */
+.intro {
+  background-color: #3a2416;
+  color: #ffffff;
+  padding: 40px 24px 64px;
+}
+
+.intro h1 {
+  font-size: 48px;
+}
+
+.intro p {
+  font-size: 19px;
+  margin: 22px 0 28px;
+  max-width: 500px;
+}
+
+
+/* ---------- Buttons and links ---------- */
+.button {
+  display: inline-block;
+  padding: 14px 30px;
+  border: 1px solid currentColor;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.text-link {
+  border-bottom: 1px solid #111111;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+/* ---------- Portfolio carousel ---------- */
+.work {
+  background: linear-gradient(#8f5a34, #ffffff 70%);
+  padding: 40px 0 48px;
+}
+
+.work h2 {
+  color: #ffffff;
+  font-size: 36px;
+  padding: 0 24px 24px;
+}
+
+/* Row of slides you can swipe sideways */
+.slides {
+  display: flex;
+  gap: 16px;
+  padding: 0 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 80%;
+  max-width: 400px;
+  scroll-snap-align: start;
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.slide h3 {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slide p {
+  margin: 6px 0 14px;
+}
+
+.arrows {
+  display: flex;
+  gap: 8px;
+  padding: 20px 24px 0;
+}
+
+.arrows button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #111111;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+
+/* ---------- Services ---------- */
+.services {
+  padding: 48px 24px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.services-intro {
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.service h3 {
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service p {
+  margin-top: 6px;
+}
+
+.service .price {
+  margin-bottom: 14px;
+  opacity: 0.7;
+}
+
+
+/* ---------- Call to action ---------- */
+.book {
+  background-color: #d59aa6;
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.book h2 {
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #3a2416;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 24px 100px;   /* extra bottom space so the floating Book button doesn't cover text */
+}
+
+.footer-logo {
+  font-size: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.footer-links a {
+  letter-spacing: 1px;
+}
+
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.7;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/* ---------- Floating button ---------- */
+.floating-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  padding: 14px 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+
+/* ---------- Bigger screens ---------- */
+@media (min-width: 800px) {
+  .hero {
+    height: 600px;
+  }
+
+  .intro h1 {
+    font-size: 72px;
+  }
+
+  .slide {
+    flex: 0 0 360px;
+  }
+
+  .service-list {
+    flex-direction: row;
+  }
+
+  .service {
+    flex: 1;
+  }
+}
